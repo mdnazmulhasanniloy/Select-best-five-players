@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@300&family=Lobster&family=Manrope:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    width: 1250px;
+}
+
+/*----------------
+    headder strat
+------------------*/
+.header {
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+.player{
+    width: 411;
+    height: 400px;
+    
+    
+}
+.boll-image{
+    height: 179.93px;
+    width: 191.08px;
+}
+.line{
+    width: 191px;
+    height: 81;
+    top: 43%;
+    right: 25%;
+}
+.player-logo{
+    width: 149.07px;
+    height: 179px;
+    top: 50px;
+    right: 50px;
+}
+.tomato{
+    color: tomato;
+}
+.black{
+    background: black ;
+}
+.font{
+    font-size: 72px;
+
+    font-family: 'Berkshire Swash', cursive;
+
+}
+.card ol{
+    margin-left: 5px;
+}
+.card ol li{
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+
+/*----------------
+    headder End 
+------------------*/
+
+.card-player{
+    height: 400px ;
+    width: 18rem;
+}
+.line-title-img{
+    width: 144px;
+    height: 12px;
+    top: 20;
+    right: 110px;
+}
+.side-box1{
+    height: 471px;
+    width: 364px;
+}
+.side-box1 .card-body ol li{
+    font-size: 20px;
+    line-height: 50px;
+}
+.side-box2{
+    height: 571px;
+    width: 367px;
+}
+footer{
+    height: 110px;
+}

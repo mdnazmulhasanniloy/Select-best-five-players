@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="stye/style.css">
+
+    <title>Select Players For Tream</title>
+  </head>
+  <body class="bg-dark">
+    <div class="bg-dark">
+        <section class="header position-relative black">
+            <img class="position-absolute img-fluid bottom-0 strat-0 player  " src="images/header image/player.png" alt="">
+            <img class="position-absolute img-fluid bottom-0 end-0 boll-image  " src="images/header image/boll.png" alt="">
+            <img class="position-absolute img-fluid  player-logo" src="images/header image/player logo.png" alt="">
+            <img class="position-absolute img-fluid  line " src="images/header image/line.png" alt="">
+
+            <div class="text d-flex flex-column h-100 text-white justify-content-center align-items-center">
+                <h1 class="tomato font w-30 text-center">Select Five Players For Your Tream </h1>
+                <p class="h3 my-5 w-50 text-center">While there is no right answer, most of the players on this list have been objectively the best players in the world over the past season.</p>
+            </div>
+       </section>
+
+        <!-- section2 strat -->
+        <section class="d-flex align-items-center my-5 mb-5">
+            <div class="container">
+                <div class="row">
+    
+    
+                    <!-- player vard -->
+    
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                       <div class="row">
+                           <div class="cards col-lg-4 my-3" >
+                               <div class="">
+                                   <div class="card border-1 white text-center black text-white card-player" >
+                                       <img style="height: 160px;" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/04/26/15247380235664.jpg" height="204px" class="card-img-top img-fluid" alt="...">
+                                       <div class="card-body ">
+                                            <h5 class="card-title fs-2 my-3">Lionel Messi</h5>
+                                            <p class="card-text d-flex justify-content-between"><span> 769 Goals </span> <span class="fs-4 text-center">-</span> <span> 974 Assists</span></p>
+                                            <button id="btn-select" href="#" class="btn btn-primary px-5" onclick="addPlayerCaed(this)">SELECT</button>
+                                      </div>
+                                   </div>
+                           
+                               </div>
+                           </div>
+                           <div class="cards col-lg-4 my-3" >
+                               <div class="">
+                                   <div class="card border-1 white text-center black text-white card-player" >
+                                       <img style="height: 160px;" src="https://mundoalbiceleste.com/wp-content/uploads/2022/05/angel-di-maria-argentina-national-team.jpg" height="204px" class="img-fluid card-img-top" alt="...">
+                                       <div class="card-body ">
+                                            <h5 class="card-title fs-2 my-3">ÁNGEL DI MARIA</h5>
+                                            <p class="card-text d-flex justify-content-between"><span> 122 Goals</span> <span class="fs-4 text-center">-</span> <span> 25 Assists</span></p>
+                                            <button id="btn-select" href="#" class="btn btn-primary px-5" onclick="addPlayerCaed(this)">SELECT</button>
+                                      </div>
+                                   </div>
+                           
+                               </div>
+                           </div>
+                           <div class="cards col-lg-4 my-3" >
+                               <div class="">
+                                   <div class="card border-1 white text-center black text-white card-player" >
+                                       <img  style="height: 160px;" src="data:image/jpeg;base64,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" class="img-fluid card-img-top" alt="...">
+                                       <div class="card-body ">
+                                            <h5 class="card-title fs-2 my-3">Neymar</h5>
+                                            <p class="card-text d-flex justify-content-between"><span> 400 Goals</span> <span class="fs-4 text-center">-</span> <span> 218 Assists</span></p>
+                                            <button href="#" class="btn btn-primary px-5" onclick="addPlayerCaed(this)">SELECT</button>
+                                      </div>
+                                   </div>
+                           
+                               </div>
+                           </div>
+                           <div class="cards col-lg-4 my-3" >
+                               <div class="">
+                                   <div class="card border-1 white text-center black text-white card-player" >
+                                       <img  style="height: 160px;" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt6503a19fdc907d32/60dd098496e07e0f6e58d0cd/7f542cea5846f6be1c5a81c7f60a6f0a66b2d1d9.jpg" class="img-fluid card-img-top" alt="...">
+                                       <div class="card-body ">
+                                            <h5 class="card-title fs-2 my-3">Salah</h5>
+                                            <p class="card-text d-flex justify-content-between"><span> 121 Goals</span> <span class="fs-4 text-center">-</span> <span> 47 Assists</span></p>
+                                            <button href="#" class="btn btn-primary px-5" onclick="addPlayerCaed(this)">SELECT</button>
+                                      </div>
+                                   </div>
+                           
+                               </div>
+                           </div>
+                           <div class="cards col-lg-4 my-3" >
+                               <div class="">
+                                   <div class="card border-1 white text-center black text-white card-player" >
+                                       <img  style="height: 160px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNGN0byqcUeuiAfIYcan4JgXhMFzleuRAw0A&usqp=CAU" class="img-fluid card-img-top" alt="...">
+                                       <div class="card-body ">
+                                            <h5 class="card-title fs-2 my-3">Mbappe</h5>
+                                            <p class="card-text d-flex justify-content-between"><span> 197 Goals</span> <span class="fs-4 text-center">-</span> <span> 50 Assists</span></p>
+                                            <button href="#" class="btn btn-primary px-5" onclick="addPlayerCaed(this)">SELECT</button>
+                                      </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="cards col-lg-4 my-3" >
+                               <div class="">
+                                   <div class="card border-1 white text-center black text-white card-player" >
+                                       <img  style="height: 160px;" src="http://www.ilgazzettinometropolitano.it/wordpress/wp-content/uploads/2020/11/Schermata-2020-11-25-alle-17.31.12.png" class="img-fluid card-img-top" alt="...">
+                                       <div class="card-body ">
+                                            <h5 class="card-title fs-2 my-3">Maradona</h5>
+                                            <p class="card-text d-flex justify-content-between"><span> 259  Goals</span> <span class="fs-4 text-center">-</span> <span> 120 Assists</span></p>
+                                            <button href="#" class="btn btn-primary px-5" onclick="addPlayerCaed(this)">SELECT</button>
+                                      </div>
+                                   </div>
+                               </div>
+                           </div>
+                           
+                          
+                           
+                           <!-- player card End -->
+                           
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-3 col-sm-12">
+                       <div class="row gap-4">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="side-box1 card black text-white">
+                                <div class="card-title my-3 text-center position-relative">
+                                    <h4>Selected - V</h4>
+                                    <img class="line-title-img position-absolute" src="images/header image/line-title.png" alt="">
+                                </div>
+                                <div class="card-body" >
+                                    <ol id="Player-name">
+                                        
+                                        
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+    
+                        <div class="col-lg-12 col-md-12">
+                            <div class="side-box2 card black text-white">
+                                <div class="card-title my-3 text-center position-relative">
+                                    <h4>Budget</h4>
+                                    <img class="line-title-img position-absolute" src="images/header image/line-title.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="row d-flex">
+                                        <label class="text-center col-lg-5 col-md-5">Per Player :</label>
+                                        <div class=" inputFild col-lg-7 col-md-7">
+                                            <input id="Per-Player-amaount" class="form-control bg-transparent " type="text" style="color: white;">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg12 text-center mt-4 fs-1">
+                                            <button id="Calculate" class="btn btn-primary px-5">Calculate</button>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex my-4">
+                                        <div class="col-lg-7 col-md-7">
+                                            <h5>Player Expenses</h5>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4">
+                                            <h5>$ <span id="player-expenses"> 00</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex my-4">
+                                        <label class="text-center col-lg-5 col-md-5" >Manager :</label>
+                                        <div class=" inputFild col-lg-7 col-md-7">
+                                            <input id="manager-salary" class="form-control bg-transparent " type="text" style="color: white;">
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex mt-4">
+                                        <label class="text-center col-lg-5 col-md-5">Coach :</label>
+                                        <div class=" inputFild col-lg-7 col-md-7">
+                                            <input id="coach-salary" class="form-control bg-transparent " type="text" style="color: white;">
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-12 col-lg12 text-center mt-4 fs-1">
+                                            <button id="Calculate-total" class="btn btn-primary px-5">Calculate Total</button>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex my-4 text-center">
+                                        <div class="col-lg-6 col-md-6">
+                                            <h5>Total</h5>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <h5>$ <span id="total-amaount"> 00</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- section2 End -->
+
+
+        <!-- footer strat  -->
+
+        <footer class="text-white">
+            <hr>
+            <p class="text-center fs-2 mt-3">Copyright @ 2022 All Rights Reserved.</p>
+            
+        </footer>
+    
+
+       <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
